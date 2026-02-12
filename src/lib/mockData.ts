@@ -1,0 +1,148 @@
+import { Product } from "@/store/cartStore"
+
+export const mockProducts: Product[] = [
+  {
+    id: "1",
+    name: "Headphones",
+    description:
+      "High-quality wireless headphones with noise cancellation. Enjoy immersive sound and long battery life.",
+    price: 200,
+    image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=500&h=500&fit=crop",
+    category: "Electronics",
+    stock: 1,
+    rating: 1.0,
+    reviews: 100,
+  },
+  {
+    id: "2",
+    name: "Marijuana",
+    description:
+      "Stay connected with this feature-packed.",
+    price: 300.00,
+    image: "/mari.jpg",
+    category: "Electronics",
+    stock: 50,
+    rating: 5.0,
+    reviews: 1000,
+  },
+  {
+    id: "3",
+    name: "cocaine",
+    description:
+      "Perfect for work or travel.",
+    price: 200.00,
+    image: "/coca.jpeg",
+    category: "Accessories",
+    stock: 100,
+    rating: 5.0,
+    reviews: 1002,
+  },
+  {
+    id: "4",
+    name: "Mechanical Keyboard",
+    description:
+      "RGB backlit mechanical keyboard with customizable switches. Built for gamers and professionals.",
+    price: 149.99,
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&h=500&fit=crop",
+    category: "Electronics",
+    stock: 30,
+    rating: 4.6,
+    reviews: 104,
+  },
+  {
+    id: "5",
+    name: "Portable Charger",
+    description:
+      "20,000mAh power bank with fast charging support. Never run out of battery on the go.",
+    price: 49.99,
+    image: "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&h=500&fit=crop",
+    category: "Electronics",
+    stock: 50,
+    rating: 4.4,
+    reviews: 72,
+  },
+  {
+    id: "6",
+    name: "Running Shoes",
+    description:
+      "Lightweight and comfortable running shoes with superior cushioning. Perfect for daily runs.",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop",
+    category: "Footwear",
+    stock: 35,
+    rating: 4.8,
+    reviews: 145,
+  },
+  {
+    id: "7",
+    name: "Coffee Maker",
+    description:
+      "Programmable coffee maker with thermal carafe. Brew perfect coffee every morning.",
+    price: 89.99,
+    image: "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=500&h=500&fit=crop",
+    category: "Home",
+    stock: 20,
+    rating: 4.2,
+    reviews: 63,
+  },
+  {
+    id: "8",
+    name: "Yoga Mat",
+    description:
+      "Non-slip yoga mat with extra cushioning. Eco-friendly and durable material.",
+    price: 39.99,
+    image: "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&h=500&fit=crop",
+    category: "Sports",
+    stock: 60,
+    rating: 4.5,
+    reviews: 91,
+  },
+  {
+    id: "9",
+    name: "Desk Lamp",
+    description:
+      "LED desk lamp with adjustable brightness and color temperature. Eye-friendly lighting.",
+    price: 59.99,
+    image: "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=500&h=500&fit=crop",
+    category: "Home",
+    stock: 45,
+    rating: 4.4,
+    reviews: 78,
+  },
+  {
+    id: "10",
+    name: "Water Bottle",
+    description:
+      "Insulated stainless steel water bottle. Keeps drinks cold for 24 hours, hot for 12.",
+    price: 29.99,
+    image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=500&h=500&fit=crop",
+    category: "Accessories",
+    stock: 100,
+    rating: 4.6,
+    reviews: 112,
+  },
+  {
+    id: "11",
+    name: "Bluetooth Speaker",
+    description:
+      "Portable waterproof Bluetooth speaker with 360° sound. 12-hour battery life.",
+    price: 79.99,
+    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=500&fit=crop",
+    category: "Electronics",
+    stock: 28,
+    rating: 4.7,
+    reviews: 95,
+  },
+  {
+    id: "12",
+    name: "Sunglasses",
+    description:
+      "Polarized sunglasses with UV400 protection. Stylish and functional design.",
+    price: 69.99,
+    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop",
+    category: "Accessories",
+    stock: 55,
+    rating: 4.3,
+    reviews: 67,
+  },
+]
