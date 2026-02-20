@@ -9,7 +9,7 @@ export const mockProducts: Product[] = [
     price: 200,
     image: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=500&h=500&fit=crop",
     category: "Electronics",
-    stock: 1,
+    stock: 3,
     rating: 1.0,
     reviews: 100,
   },

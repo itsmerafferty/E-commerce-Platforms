@@ -68,7 +68,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-semibold text-lg">Secure Payment</h3>
               <p className="text-muted-foreground text-sm">
-                Your payment information is processed securely
+                Your  payment information is processed securely
               </p>
             </div>
 
