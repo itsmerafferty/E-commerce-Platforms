@@ -1,26 +1,12 @@
-"use client" // Added to enable reading localStorage
-
-import { useEffect, useState } from "react" // Added for state management
 import Link from "next/link"
 import { ArrowRight, ShoppingBag, Truck, Shield } from "lucide-react"
 import { Container } from "@/components/layout/Container"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge" // Ensure you have this UI component
 import { ProductGrid } from "@/modules/product/components/ProductGrid"
 import { mockProducts } from "@/lib/mockData"
 
 export default function HomePage() {
-  const [userName, setUserName] = useState<string | null>(null)
   const featuredProducts = mockProducts.slice(0, 4)
-
-  // Check if user is logged in on mount
-  useEffect(() => {
-    const savedUser = localStorage.getItem("user")
-    if (savedUser) {
-      const user = JSON.parse(savedUser)
-      setUserName(user.name)
-    }
-  }, [])
 
   return (
     <div>
@@ -28,13 +14,6 @@ export default function HomePage() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              {/* Personalized Badge for Logged In Users */}
-              {userName && (
-                <Badge variant="outline" className="px-4 py-1 border-primary text-primary animate-in fade-in slide-in-from-left-4 duration-500">
-                  Welcome back, {userName}! 👋
-                </Badge>
-              )}
-
               <h1 className="text-5xl font-bold leading-tight">
                 Discover Amazing Products at Unbeatable Prices
               </h1>
@@ -48,16 +27,8 @@ export default function HomePage() {
                     <ArrowRight className="h-5 w-5" />
                   </Button>
                 </Link>
-                {/* If not logged in, show a Register button. If logged in, show Deals. */}
-                {!userName && (
-                   <Link href="/register">
-                   <Button size="lg" variant="outline">
-                     Create Account
-                   </Button>
-                 </Link>
-                )}
                 <Link href="/deals">
-                  <Button size="lg" variant="ghost">
+                  <Button size="lg" variant="outline">
                     View Deals
                   </Button>
                 </Link>
@@ -78,7 +49,6 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Feature Section */}
       <section className="py-16 bg-muted/50">
         <Container>
           <div className="grid md:grid-cols-3 gap-8">
@@ -98,7 +68,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-semibold text-lg">Secure Payment</h3>
               <p className="text-muted-foreground text-sm">
-                Your payment information is processed securely
+                Your  payment information is processed securely
               </p>
             </div>
 
@@ -115,7 +85,6 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Products Section */}
       <section className="py-16">
         <Container>
           <div className="flex justify-between items-center mb-8">
@@ -137,7 +106,6 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* Newsletter Section */}
       <section className="py-16 bg-primary text-primary-foreground">
         <Container>
           <div className="text-center space-y-4 max-w-2xl mx-auto">
